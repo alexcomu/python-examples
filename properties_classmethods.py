@@ -7,13 +7,16 @@ class Address(object):
     def append_cap(self, value):
         self._cap.append(value)
 
+    # append to global, all classes
     def append_global_cap(self, value):
         self.__class__._cap.append(value)
 
+    # property definition
     @property
     def cap(self):
         return self._cap + self.__class__._cap
 
+    # class method example
     @classmethod
     def address_with_cap_100(self):
         a = Address()
