@@ -1,2 +1,16 @@
 Simple Collection of Python examples with some comments and hints.
 
+# Install Requirements
+
+Create a virtualenv and install requirements:
+
+    virtualenv env
+    source env/bin/activate
+    pip install -r requirements.txt
+
+# Run the notebook
+
+Just use:
+
+    jupyter notebook
+
